@@ -233,12 +233,35 @@ button.disabled:hover {
 <script>
 'use strict';
 
+//ADD ITEMS HERE
 var items = [
-    // Define your items here
+    {id: 'agatha', name: 'Agatha', image: '/images/agatha.png', region: 'kanto,johto'},
+    {id: 'bill', name: 'Bill', image: '/images/bill.png', region: 'kanto,johto'},
+    {id: 'blaine', name: 'Blaine', image: '/images/blaine.png', region: 'kanto'},
+    {id: 'blue', name: 'Blue Oak', image: '/images/blue.png', region: 'kanto'},
+    {id: 'brock', name: 'Brock', image: '/images/brock.png', region: 'kanto'},
+    {id: 'bruno', name: 'Bruno', image: '/images/bruno.png', region: 'kanto,johto'},
+    //{id: 'celio', name: 'Celio', image: 'celio.png', region: 'kanto,sevii'},
+    //{id: 'daisy', name: 'Daisy Oak', image: '/images/daisy.png', region: 'kanto'},
+    {id: 'erika', name: 'Erika', image: '/images/erika.png', region: 'kanto'},
+    {id: 'giovanni', name: 'Giovanni', image: '/images/giovanni.png', region: 'kanto'},
+    {id: 'james', name: 'James', image: '/images/james.png', region: 'kanto'},
+    {id: 'janine', name: 'Janine', image: '/images/janine.png', region: 'kanto'},
+    {id: 'jessie', name: 'Jessie', image: '/images/jessie.png', region: 'kanto'},
+    {id: 'koga', name: 'Koga', image: '/images/koga.png', region: 'kanto'},
+    {id: 'lance', name: 'Lance', image: '/images/lance.png', region: 'kanto,johto'},
+    {id: 'leaf', name: 'Leaf', image: '/images/leaf.png', region: 'kanto'},
+    {id: 'lorelei', name: 'Lorelei', image: '/images/lorelei.png', region: 'kanto'},
+    {id: 'ltsurge', name: 'Lt. Surge', image: '/images/ltsurge.png', region: 'kanto'},
+    {id: 'misty', name: 'Misty', image: '/images/misty.png', region: 'kanto'},
+    {id: 'oak', name: 'Professor Oak', image: '/images/oak.png', region: 'kanto'},
+    {id: 'red', name: 'Red', image: '/images/red.png', region: 'kanto'},
+    {id: 'sabrina', name: 'Sabrina', image: '/images/sabrina.png', region: 'kanto'}
 ];
 
 var myPicker = new picker.Picker({
-    items: items
+    items: items,
+    localStorageKey: 'picker-state'
 });
 
 var pickerUI = new PickerUI(myPicker, {
