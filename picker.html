@@ -216,7 +216,7 @@ button.disabled:hover {
 <ul id="evaluating" class="item-list">
 </ul>
 
-<p id="buttons"><button id="pick">Pick</button> <button id="pass">Pass</button> <button id="undo">Undo</button> <button id="redo">Redo</button></p>
+<p id="buttons"><button id="pick">Pick</button> <button id="pass">Pass</button> <button id="undo">Undo</button> <button id="redo">Redo</button> <button id="reset"></button>Reset</button></button></p>
 </div>
 
 <div id="secondary">
@@ -243,20 +243,20 @@ var items = [
     {id: 'bruno', name: 'Bruno', image: 'images/bruno.png', region: 'kanto,johto'},
     //{id: 'celio', name: 'Celio', image: 'celio.png', region: 'kanto,sevii'},
     //{id: 'daisy', name: 'Daisy Oak', image: '/images/daisy.png', region: 'kanto'},
-    {id: 'erika', name: 'Erika', image: '/images/erika.png', region: 'kanto'},
-    {id: 'giovanni', name: 'Giovanni', image: '/images/giovanni.png', region: 'kanto'},
-    {id: 'james', name: 'James', image: '/images/james.png', region: 'kanto'},
-    {id: 'janine', name: 'Janine', image: '/images/janine.png', region: 'kanto'},
-    {id: 'jessie', name: 'Jessie', image: '/images/jessie.png', region: 'kanto'},
-    {id: 'koga', name: 'Koga', image: '/images/koga.png', region: 'kanto'},
-    {id: 'lance', name: 'Lance', image: '/images/lance.png', region: 'kanto,johto'},
-    {id: 'leaf', name: 'Leaf', image: '/images/leaf.png', region: 'kanto'},
-    {id: 'lorelei', name: 'Lorelei', image: '/images/lorelei.png', region: 'kanto'},
-    {id: 'ltsurge', name: 'Lt. Surge', image: '/images/ltsurge.png', region: 'kanto'},
-    {id: 'misty', name: 'Misty', image: '/images/misty.png', region: 'kanto'},
-    {id: 'oak', name: 'Professor Oak', image: '/images/oak.png', region: 'kanto'},
-    {id: 'red', name: 'Red', image: '/images/red.png', region: 'kanto'},
-    {id: 'sabrina', name: 'Sabrina', image: '/images/sabrina.png', region: 'kanto'}
+    {id: 'erika', name: 'Erika', image: 'images/erika.png', region: 'kanto'},
+    {id: 'giovanni', name: 'Giovanni', image: 'images/giovanni.png', region: 'kanto'},
+    {id: 'james', name: 'James', image: 'images/james.png', region: 'kanto'},
+    {id: 'janine', name: 'Janine', image: 'images/janine.png', region: 'kanto'},
+    {id: 'jessie', name: 'Jessie', image: 'images/jessie.png', region: 'kanto'},
+    {id: 'koga', name: 'Koga', image: 'images/koga.png', region: 'kanto'},
+    {id: 'lance', name: 'Lance', image: 'images/lance.png', region: 'kanto,johto'},
+    {id: 'leaf', name: 'Leaf', image: 'images/leaf.png', region: 'kanto'},
+    {id: 'lorelei', name: 'Lorelei', image: 'images/lorelei.png', region: 'kanto'},
+    {id: 'ltsurge', name: 'Lt. Surge', image: 'images/ltsurge.png', region: 'kanto'},
+    {id: 'misty', name: 'Misty', image: 'images/misty.png', region: 'kanto'},
+    {id: 'oak', name: 'Professor Oak', image: 'images/oak.png', region: 'kanto'},
+    {id: 'red', name: 'Red', image: 'images/red.png', region: 'kanto'},
+    {id: 'sabrina', name: 'Sabrina', image: 'images/sabrina.png', region: 'kanto'}
 ];
 
 var myPicker = new picker.Picker({
@@ -271,7 +271,8 @@ var pickerUI = new PickerUI(myPicker, {
         undo: "#undo",
         redo: "#redo",
         evaluating: "#evaluating",
-        favorites: "#favorites"
+        favorites: "#favorites",
+        reset: "#reset"
     }
 });
 
